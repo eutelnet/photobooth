@@ -1,0 +1,364 @@
+
+/*
+|------------------------------------------------------------
+| Import reset
+|------------------------------------------------------------
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+/*
+|------------------------------------------------------------
+| Import shared less files
+|------------------------------------------------------------
+*/
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+|------------------------------------------------------------
+| Clearfix
+|------------------------------------------------------------
+*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+GENERAL 
+------------------------------------------*/
+body {
+  background: url(../img/pattern-bgr.png) repeat #f3f3f3;
+}
+header {
+  padding: 40px 0 25px;
+  text-align: center;
+}
+header img {
+  display: block;
+  margin: 0 auto 25px;
+}
+.content {
+  position: relative;
+  z-index: 10;
+  width: 1100px;
+  margin: 0 auto -180px;
+  padding: 70px 50px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 10px 27.3px 2.7px rgba(0, 0, 0, 0.11);
+}
+.content h1 {
+  position: relative;
+  height: 44px;
+  margin-bottom: 100px;
+  text-align: left;
+  text-indent: -9999px;
+  background: url(../img/txt-thanks.png) 50% 0 no-repeat;
+}
+.content h1:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -50px;
+  width: 60px;
+  height: 2px;
+  margin-left: -30px;
+  background-color: #d31c6e;
+}
+.content p {
+  margin-bottom: 20px;
+  font-family: Arial, Helvetice, sans-serif;
+  font-size: 26px;
+  line-height: 42px;
+  color: #777777;
+}
+.content .photos {
+  padding: 50px 0;
+  text-align: center;
+}
+.content .photos img {
+  display: inline-block;
+  padding: 20px 20px 40px 20px;
+  margin: 0 20px 20px;
+  vertical-align: middle;
+  background-color: white;
+  box-shadow: 0px 27px 40.5px 9.5px rgba(0, 0, 0, 0.18);
+}
+.content .share {
+  text-align: center;
+}
+.content .share li {
+  display: inline-block;
+}
+.content .share li a {
+  display: block;
+  width: 77px;
+  height: 77px;
+  margin: 0 10px 10px;
+  padding: 17px 0 0;
+  border-radius: 50%;
+  background-color: #cccccc;
+}
+.content .share li a img {
+  display: block;
+  margin: 0 auto;
+}
+.content .share li a:hover {
+  opacity: 0.8;
+}
+.content .share li.fb a {
+  background-color: #3b5999;
+}
+.content .share li.tw a {
+  background-color: #55acee;
+}
+.content .share li.gp a {
+  background-color: #dd4b39;
+}
+.content .share li.ig a {
+  background-color: #e4405f;
+}
+.content.header-included {
+  margin-top: 36px;
+}
+.content.header-included header {
+  padding: 0;
+}
+.content.header-included header img {
+  margin-bottom: 80px;
+}
+footer {
+  position: relative;
+  z-index: 5;
+  padding: 240px 0 32px;
+  text-align: center;
+  background-color: #d31c6e;
+  box-shadow: inset 0px 27px 40.5px 0 rgba(0, 0, 0, 0.18);
+}
+footer p {
+  margin-bottom: 25px;
+  font-family: Arial, Helvetice, sans-serif;
+  font-size: 12px;
+  color: white;
+}
+body.macmillan-scheme {
+  background-attachment: fixed !important;
+}
+body.macmillan-scheme h1 {
+  background-image: url(../img/txt-thanks-green.png);
+}
+body.macmillan-scheme h1:after {
+  background-color: #00a246;
+}
+body.macmillan-scheme .content {
+  background-color: #005c46;
+}
+body.macmillan-scheme .content p {
+  color: white;
+}
+body.macmillan-scheme footer {
+  background-color: #00a246;
+}
+body.cccbath-scheme {
+  background-attachment: fixed !important;
+}
+body.cccbath-scheme h1 {
+  background-image: url(../img/txt-thanks-white.png);
+}
+body.cccbath-scheme h1:after {
+  background-color: #ec1c24;
+}
+body.cccbath-scheme .content {
+  background-color: #000000;
+}
+body.cccbath-scheme .content p {
+  color: #b1b1b1;
+}
+body.cccbath-scheme footer {
+  background-color: #242424;
+}
+@media screen and (max-width: 1100px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
+  }
+  .content .photos {
+    padding: 20px 0;
+  }
+  .content .photos img {
+    padding: 10px 10px 20px;
+    margin: 0 10px 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .content .photos img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+}
+@media (max-width: 480px) {
+	.gallery.image, 
+	.gallery.video {
+		width: 100%;
+	}
+	.frame {
+		margin-left: 0;
+	}
+}
